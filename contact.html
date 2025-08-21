@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Origin Club — Innovate. Collaborate. Launch." />
+    <title>Origin Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">Origin<span>•</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="auth" href="auth.html">Auth</a>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" class="btn ghost small" aria-label="Toggle theme">◐</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <h1>Contact Us</h1>
+        <p class="muted">Have a question? Want to collaborate? Drop us a message.</p>
+      </section>
+
+      <section class="section">
+        <form id="contactForm" class="form glass" method="POST" data-netlify="true">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+            <small class="error" data-for="name"></small>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <small class="error" data-for="email"></small>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+            <small class="error" data-for="message"></small>
+          </div>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p id="formStatus" class="muted"></p>
+          
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner glass-footer">
+        <div>
+          <div class="logo xl">Origin<span>•</span></div>
+          <p class="muted">Innovate. Collaborate. Launch.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="auth.html">Auth</a>
+        </div>
+        <div class="footer-meta">
+          <p>© <span id="year"></span> Origin Club — Noida International University</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+
+  </body>
+</html>

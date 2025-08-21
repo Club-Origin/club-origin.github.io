@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Origin Club — Innovate. Collaborate. Launch." />
+    <title>Origin Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">Origin<span>•</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="auth" href="auth.html">Auth</a>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" class="btn ghost small" aria-label="Toggle theme">◐</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <h1>Sign in / Register</h1>
+      </section>
+
+      <section class="section auth-section">
+        <div class="auth-panels">
+          <form id="loginForm" class="form glass-auth" autocomplete="on">
+            <h3>Login</h3>
+            <div class="form-row">
+              <label for="loginEmail">Email</label>
+              <input id="loginEmail" type="email" required placeholder="you@example.com" />
+            </div>
+            <div class="form-row">
+              <label for="loginPassword">Password</label>
+              <input id="loginPassword" type="password" required placeholder="••••••••" />
+            </div>
+            <button class="btn primary" type="submit">Login</button>
+            <p id="loginStatus" class="xs muted"></p>
+          </form>
+
+          <form id="registerForm" class="form glass-auth" autocomplete="on">
+            <h3>Register</h3>
+            <div class="form-row">
+              <label for="regName">Name</label>
+              <input id="regName" type="text" required placeholder="Your name" />
+            </div>
+            <div class="form-row">
+              <label for="regEmail">Email</label>
+              <input id="regEmail" type="email" required placeholder="you@example.com" />
+            </div>
+            <div class="form-row">
+              <label for="regPassword">Password</label>
+              <input id="regPassword" type="password" minlength="6" required placeholder="At least 6 characters" />
+            </div>
+            <button class="btn primary" type="submit">Create Account</button>
+            <p id="registerStatus" class="xs muted"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner glass-footer">
+        <div>
+          <div class="logo xl">Origin<span>•</span></div>
+          <p class="muted">Innovate. Collaborate. Launch.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="auth.html">Auth</a>
+        </div>
+        <div class="footer-meta">
+          <p>© <span id="year"></span> Origin Club — Noida International University</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+
+  </body>
+</html>

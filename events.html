@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Origin Club — Innovate. Collaborate. Launch." />
+    <title>Origin Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">Origin<span>•</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="auth" href="auth.html">Auth</a>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" class="btn ghost small" aria-label="Toggle theme">◐</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <h1>All Events</h1>
+        <p class="muted">From hackathons to seminars — discover what's happening at Origin.</p>
+      </section>
+
+      <section class="section">
+        <div class="filters">
+          <input id="searchInput" type="search" placeholder="Search events..." aria-label="Search events" />
+          <select id="typeFilter" aria-label="Filter by type">
+            <option value="">All types</option>
+            <option value="Hackathon">Hackathon</option>
+            <option value="Seminar">Seminar</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Showcase">Showcase</option>
+          </select>
+        </div>
+        <div id="events-grid" class="card-grid"></div>
+      </section>
+    </main>
+
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-content glass">
+        <button class="modal-close" data-close aria-label="Close">✕</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-inner glass-footer">
+        <div>
+          <div class="logo xl">Origin<span>•</span></div>
+          <p class="muted">Innovate. Collaborate. Launch.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="auth.html">Auth</a>
+        </div>
+        <div class="footer-meta">
+          <p>© <span id="year"></span> Origin Club — Noida International University</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+
+  </body>
+</html>
