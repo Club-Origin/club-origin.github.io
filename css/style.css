@@ -374,16 +374,15 @@ textarea:focus {
 
 .auth-section .auth-panels {
   display: grid;
-  grid-template-columns: 1fr 1fr;   /* 2 equal panels */
-  gap: 2rem;                        /* space between panels */
+  grid-template-columns: 1fr 1fr;  
+  gap: 2rem;                        
   width: 100%;
-  max-width: 1100px;                /* center limit */
-  margin: 0 auto;                   /* center inside section */
+  max-width: 1100px;               
+  margin: 0 auto;                   
 }
 
-/* ensure the panels fill the grid cell */
 .auth-panel {
-  height: 100%;           /* important for grid-auto-rows to work */
+  height: 100%;           
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -398,7 +397,7 @@ textarea:focus {
 @media (max-width: 720px) {
   .auth-section .auth-panels {
     grid-template-columns: 1fr;
-    grid-auto-rows: auto; /* let height adapt when stacked */
+    grid-auto-rows: auto; 
   }
 }
 
@@ -407,16 +406,16 @@ textarea:focus {
 .site-footer {
   margin-top: 3rem;
   border-top: 1px solid var(--border);
-  width: 100%;              /* take full width */
+  width: 100%;              
 }
 
 .footer-inner {
-  width: 100%;              /* span across */
+  width: 100%;              
   margin: 0;
   padding: 1.2rem 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;       /* center items horizontally */
+  align-items: center;       
   justify-content: center;
   text-align: center;
   gap: 1rem;
@@ -424,9 +423,9 @@ textarea:focus {
 
 .footer-links {
   display: flex;
-  gap: 2rem;                 /* space between links */
+  gap: 2rem;                 
   justify-content: center;
-  flex-wrap: wrap;           /* wrap links if small screen */
+  flex-wrap: wrap;           
 }
 
 .footer-meta {
@@ -446,7 +445,7 @@ textarea:focus {
   box-shadow: var(--shadow);
 }
 
-/* stronger glass for hero */
+
 .glass-hero {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -454,7 +453,7 @@ textarea:focus {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
 }
 
-/* softer glass for footer */
+
 .glass-footer {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -462,7 +461,7 @@ textarea:focus {
   box-shadow: none;
 }
 
-/* balanced glass for auth panels */
+
 .glass-auth {
   padding: 2rem;
   border-radius: 20px;
@@ -563,11 +562,11 @@ textarea:focus {
   }
 
   .card-grid {
-    grid-template-columns: 1fr; /* stack cards */
+    grid-template-columns: 1fr; 
   }
 
   .team-grid {
-    grid-template-columns: 1fr; /* stack members */
+    grid-template-columns: 1fr; 
   }
 
   .footer-links {
@@ -592,6 +591,7 @@ textarea:focus {
   .footer-links {
     gap: 1.2rem;
   }
+  
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
