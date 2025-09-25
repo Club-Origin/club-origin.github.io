@@ -89,12 +89,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // ====== Event Data ======
 const EVENT_DATA = [
   {
-    id: 'hack24',
-    title: 'Origin Hack 2025',
-    type: 'Hackathon',
-    date: '2025-09-20',
-    short: '24-hour campus hackathon to build AI-powered tools.',
-    long: 'Join 300+ hackers for a 24-hour sprint. Teams of 1–4. Mentors from industry. Swag, food, and prizes.',
+    id: 'idea25',
+    title: 'Ecell Eureka! 2025',
+    type: 'Ideathon',
+    date: '2025-08-28',
+    short: 'A dynamic event to ideate and showcase fresh solutions.',
+    long: 'Collaborate in teams of 3-5 during an engaging ideathon. Guidance from experts, fun rewards, and plenty of innovation await.',
     timeline: ['10:00 AM — Check-in & opening ceremony', '12:00 PM — Hacking begins', '09:00 PM — Midnight snack & mini-events', '09:00 AM — Submissions close', '11:00 AM — Demos & judging', '01:00 PM — Winners & closing'],
     reg: '#',
     image: ''
@@ -132,6 +132,7 @@ const EVENT_DATA = [
     reg: '#',
     image: ''
   },
+  
   {
     id: 'dsboot',
     title: 'Data Science Bootcamp',
@@ -311,3 +312,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+function handleBugBountyFormSubmit(event) {
+  event.preventDefault();
+  const form = event.target;
+  // Data gathering (adapt if you have a backend/API)
+  const data = {
+    name: form.reporterName.value.trim(),
+    email: form.reporterEmail.value.trim(),
+    title: form.bugTitle.value.trim(),
+    description: form.bugDescription.value.trim(),
+    steps: form.steps.value.trim(),
+    impact: form.impact.value.trim(),
+  };
+  // Simple form validation feedback (example)
+  if (!data.email.includes("@") || !data.description) {
+    alert("Please complete all required fields correctly.");
+    return;
+  }
+  alert("Thank you for your submission. Our security team will review your report shortly.");
+  form.reset();
+}
+document.getElementById('bugBountyForm').addEventListener('submit', handleBugBountyFormSubmit);
