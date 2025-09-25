@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Origin Club — Innovate. Collaborate. Launch." />
+    <title>Origin Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">Origin<span>•</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="solve.html">Solve</a>
+        <a class="auth" href="auth.html">Auth</a>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" class="btn ghost small" aria-label="Toggle theme">◐</button>
+      </div>
+    </header>
+
+    <main class="page-wrap">
+  <div class="bug-bounty-main-container">
+  <h2 class="bug-bounty-title">Bug Bounty Program</h2>
+  <div class="bug-bounty-content-wrapper">
+    <section class="bug-bounty-info">
+      <p>
+        We value your help in keeping our platform secure. 
+        If you discover a bug or vulnerability, please use the form or email <a href="mailto:cluboriginniu@gmail.com">cluboriginniu@gmail.com</a>.
+      </p>
+      <p>
+        Successful reporters will be recognized on our official social media channels.
+      </p>
+    </section>
+    <section class="bug-bounty-form-container">
+      <form id="bugBountyForm" class="bug-bounty-form">
+        <h3>Bug Report Submission</h3>
+        <label for="reporterName">Your Name</label>
+        <input type="text" id="reporterName" name="reporterName" required placeholder="Your Name">
+
+        <label for="reporterEmail">Email Address</label>
+        <input type="email" id="reporterEmail" name="reporterEmail" required placeholder="you@example.com">
+
+        <label for="bugTitle">Bug Title</label>
+        <input type="text" id="bugTitle" name="bugTitle" required placeholder="Short Summary">
+
+        <label for="bugDescription">Description</label>
+        <textarea id="bugDescription" name="bugDescription" rows="4" required
+          placeholder="Describe the issue here"></textarea>
+
+        <label for="steps">Steps to Fix</label>
+        <textarea id="steps" name="steps" rows="3" required placeholder="Step 1: ..."></textarea>
+
+        <label for="impact">Impact</label>
+        <input type="text" id="impact" name="impact" required placeholder="e.g., Data leakage, account compromise">
+
+        <button type="submit">Submit Report</button>
+      </form>
+    </section>
+  </div>
+</div>
+
+</main>
+
+    <footer class="site-footer">
+      <div class="footer-inner glass-footer">
+        <div>
+          <div class="logo xl">Origin<span>•</span></div>
+          <p class="muted">Innovate. Collaborate. Launch.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="solve.html">Solve</a>
+          <a href="auth.html">Auth</a>
+        </div>
+        <div class="footer-meta">   
+          <p>© <span id="year"></span> Origin Club — Noida International University</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+
+  </body>
+</html>
